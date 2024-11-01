@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|c:\\users\\isc_2\\source\\repos\\pruebaleonardomanceroapi\\pruebaleonardomancero\\models\\mensajeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|solutionrelative:models\\mensajeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|c:\\users\\isc_2\\source\\repos\\pruebaleonardomanceroapi\\pruebaleonardomancero\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|c:\\users\\isc_2\\source\\repos\\pruebaleonardomanceroapi\\pruebaleonardomancero\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|solutionrelative:controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|c:\\users\\isc_2\\source\\repos\\pruebaleonardomanceroapi\\pruebaleonardomancero\\datos\\mapeodatosproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|solutionrelative:datos\\mapeodatosproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|c:\\users\\isc_2\\source\\repos\\pruebaleonardomanceroapi\\pruebaleonardomancero\\utils\\validador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|solutionrelative:utils\\validador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|c:\\users\\isc_2\\source\\repos\\pruebaleonardomanceroapi\\pruebaleonardomancero\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|solutionrelative:controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|c:\\users\\isc_2\\source\\repos\\pruebaleonardomanceroapi\\pruebaleonardomancero\\datos\\datosclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|solutionrelative:datos\\datosclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|c:\\users\\isc_2\\source\\repos\\pruebaleonardomanceroapi\\pruebaleonardomancero\\models\\productosrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38756A72-8054-4F7C-9259-FF86829AFB79}|pruebaLeonardoMancero.csproj|solutionrelative:models\\productosrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MensajeResponse.cs",
+              "DocumentMoniker": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Models\\MensajeResponse.cs",
+              "RelativeDocumentMoniker": "Models\\MensajeResponse.cs",
+              "ToolTip": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Models\\MensajeResponse.cs",
+              "RelativeToolTip": "Models\\MensajeResponse.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T15:01:48.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T23:00:55.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DatosClientes.cs",
+              "DocumentMoniker": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Datos\\DatosClientes.cs",
+              "RelativeDocumentMoniker": "Datos\\DatosClientes.cs",
+              "ToolTip": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Datos\\DatosClientes.cs",
+              "RelativeToolTip": "Datos\\DatosClientes.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T20:22:21.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MapeoDatosProductos.cs",
+              "DocumentMoniker": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Datos\\MapeoDatosProductos.cs",
+              "RelativeDocumentMoniker": "Datos\\MapeoDatosProductos.cs",
+              "ToolTip": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Datos\\MapeoDatosProductos.cs",
+              "RelativeToolTip": "Datos\\MapeoDatosProductos.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAIAzwLEAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T19:47:33.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAowFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T19:44:48.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductosRequest.cs",
+              "DocumentMoniker": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Models\\ProductosRequest.cs",
+              "RelativeDocumentMoniker": "Models\\ProductosRequest.cs",
+              "ToolTip": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Models\\ProductosRequest.cs",
+              "RelativeToolTip": "Models\\ProductosRequest.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T19:38:56.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "Controllers\\ClientesController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAAB0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T18:47:16.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Validador.cs",
+              "DocumentMoniker": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Utils\\Validador.cs",
+              "RelativeDocumentMoniker": "Utils\\Validador.cs",
+              "ToolTip": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\Utils\\Validador.cs",
+              "RelativeToolTip": "Utils\\Validador.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAD4vzcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T18:18:27.445Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

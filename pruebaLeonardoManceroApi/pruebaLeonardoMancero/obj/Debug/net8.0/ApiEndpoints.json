@@ -1,0 +1,370 @@
+[
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.ClientesController",
+    "Method": "GetClienteAllResponse",
+    "RelativePath": "api/Clientes/ConsultarAllClientes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[pruebaLeonardoMancero.Models.ClienteResponse, pruebaLeonardoMancero, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.ClientesController",
+    "Method": "GetClienteResponse",
+    "RelativePath": "api/Clientes/ConsultarClientes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consultarCliente",
+        "Type": "pruebaLeonardoMancero.Models.ConsultarCliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[pruebaLeonardoMancero.Models.ClienteResponse, pruebaLeonardoMancero, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.ClientesController",
+    "Method": "DeleteClientesRequest",
+    "RelativePath": "api/Clientes/EliminarClientes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ClientesRequest",
+        "Type": "pruebaLeonardoMancero.Models.EliminarCliente",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "pruebaLeonardoMancero.Models.MensajeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.ClientesController",
+    "Method": "PutClientesRequest",
+    "RelativePath": "api/Clientes/ModificarClientes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ClientesRequest",
+        "Type": "pruebaLeonardoMancero.Models.ModificarClienteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "pruebaLeonardoMancero.Models.MensajeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.ClientesController",
+    "Method": "RegistrarClientesRequest",
+    "RelativePath": "api/Clientes/RegistrarClientes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteRequest",
+        "Type": "pruebaLeonardoMancero.Models.ClienteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "pruebaLeonardoMancero.Models.MensajeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.ProductosController",
+    "Method": "PutProductosRequest",
+    "RelativePath": "api/Productos/ActualizarProductos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productosRequest",
+        "Type": "pruebaLeonardoMancero.Models.ProductosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "pruebaLeonardoMancero.Models.MensajeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.ProductosController",
+    "Method": "GetProductoAllResponse",
+    "RelativePath": "api/Productos/ConsultarAllProductos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[pruebaLeonardoMancero.Models.ProductosResponse, pruebaLeonardoMancero, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.ProductosController",
+    "Method": "GetProductoResponse",
+    "RelativePath": "api/Productos/ConsultarProductos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consultarProducto",
+        "Type": "pruebaLeonardoMancero.Models.ConsultarProductoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[pruebaLeonardoMancero.Models.ProductosResponse, pruebaLeonardoMancero, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.ProductosController",
+    "Method": "DeleteProductosRequest",
+    "RelativePath": "api/Productos/EliminarProductos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eliminarProductoRequest",
+        "Type": "pruebaLeonardoMancero.Models.EliminarProductoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.ProductosController",
+    "Method": "PostProductosRequest",
+    "RelativePath": "api/Productos/RegistrarProductos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productosRequest",
+        "Type": "pruebaLeonardoMancero.Models.ProductosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "pruebaLeonardoMancero.Models.MensajeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.UsuariosController",
+    "Method": "GetUsuariosRequest",
+    "RelativePath": "api/Usuarios/ConsultarUsuarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consultarUsuario",
+        "Type": "pruebaLeonardoMancero.Models.ConsultarUsuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[pruebaLeonardoMancero.Models.UsuariosResponse, pruebaLeonardoMancero, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.UsuariosController",
+    "Method": "DeleteUsuariosRequest",
+    "RelativePath": "api/Usuarios/EliminarUsuarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuariosRequest",
+        "Type": "pruebaLeonardoMancero.Models.EliminarUsuarios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "pruebaLeonardoMancero.Models.MensajeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.UsuariosController",
+    "Method": "PutUsuariosRequest",
+    "RelativePath": "api/Usuarios/ModificarUsuarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuariosRequest",
+        "Type": "pruebaLeonardoMancero.Models.ModificarUsuarios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "pruebaLeonardoMancero.Models.MensajeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.UsuariosController",
+    "Method": "PutUsuariosPaswwordRequest",
+    "RelativePath": "api/Usuarios/ModificarUsuariosPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuariosRequest",
+        "Type": "pruebaLeonardoMancero.Models.ModificarPasswordUsuarios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "pruebaLeonardoMancero.Models.MensajeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.UsuariosController",
+    "Method": "PostUsuariosRequest",
+    "RelativePath": "api/Usuarios/RegistrarUsuarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuariosRequest",
+        "Type": "pruebaLeonardoMancero.Models.UsuariosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "pruebaLeonardoMancero.Models.MensajeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
