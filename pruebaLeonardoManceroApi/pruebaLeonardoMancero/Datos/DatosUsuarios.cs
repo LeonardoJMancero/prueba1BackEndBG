@@ -17,6 +17,8 @@ namespace pruebaLeonardoMancero.Datos
         MensajeResponse PutUsuariosRequest(ModificarUsuarios usuariosRequest, AppDbContext _context);
         MensajeResponse PutUsuariosPaswwordRequest(ModificarPasswordUsuarios usuariosRequest, AppDbContext context);
         MensajeResponse DeleteUsuariosRequest(EliminarUsuarios usuariosRequest, AppDbContext _context);
+        List<MensajeResponse> GetLoginRequest(ConsultarLogin consultarLogin, AppDbContext _context);
+
     }
     public class DatosUsuarios : IDatosUsuarios
     {
@@ -92,6 +94,44 @@ namespace pruebaLeonardoMancero.Datos
             }
 
         }
+
+
+        public List<MensajeResponse> GetLoginRequest(ConsultarLogin consultarLogin, AppDbContext _context)
+        {
+            using (var command = _context.Database.GetDbConnection().CreateCommand())
+            {
+                SqlDataAdapter ad = new SqlDataAdapter();
+                DataSet ds = new DataSet();
+                List<MensajeResponse> response = new List<MensajeResponse>();
+                try
+                {
+                    command.CommandText = stringHandlers.sp_Usuarios.Trim();
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.Add(new SqlParameter("@accion", stringHandlers.LogindUsuarios));
+                    command.Parameters.Add(new SqlParameter("@usuario", consultarLogin.usuario.ToString().Trim()));
+                    command.Parameters.Add(new SqlParameter("@password", consultarLogin.password.ToString().Trim()));
+
+                    _context.Database.OpenConnection();
+                    ad = new SqlDataAdapter((SqlCommand)command);
+                    ad.Fill(ds);
+                    var json = JsonConvert.SerializeObject(ds.Tables[0]);
+                    response = JsonConvert.DeserializeObject<List<MensajeResponse>>(json);
+                    _context.Database.CloseConnection();
+
+                    return response;
+
+                }
+                catch (DbUpdateException ex)
+                {
+                    _context.Database.CloseConnection();
+                    throw new Exception(ex.Message.ToString());
+                }
+            }
+
+        }
+
+
 
         public MensajeResponse PostUsuariosRequest(UsuariosRequest usuariosRequest, AppDbContext context)
         {

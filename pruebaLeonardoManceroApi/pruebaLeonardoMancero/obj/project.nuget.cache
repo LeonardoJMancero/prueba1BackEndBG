@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v6ZCJCILgLI=",
+  "dgSpecHash": "1F4kFJbQnJc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\pruebaLeonardoMancero.csproj",
+  "projectFilePath": "C:\\Users\\isc_2\\source\\repos\\prueba1BackEndBG\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\pruebaLeonardoMancero.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\isc_2\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\isc_2\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

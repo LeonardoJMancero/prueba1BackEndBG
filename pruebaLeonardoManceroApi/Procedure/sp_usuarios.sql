@@ -71,6 +71,20 @@ BEGIN
 	WHERE usuario =@usuario
 END
 
+IF @accion ='CL'
+BEGIN
+		IF(SELECT count(1) FROM usuario WHERE usuario=@usuario and [password] = @password) = 0
+		BEGIN
+			SET @mensaje ='Favor Validar el UserName y Password sean los Correctos.'
+			set @statusCode=@statusError
+		END
+		ELSE
+		BEGIN
+			SET @mensaje ='login Correcto.'
+			set @statusCode=@statusOK
+		END 
+END
+
 IF @accion = 'UP'
 BEGIN
 		IF(@password = @confirmacionPassword)
@@ -146,5 +160,5 @@ END
 
 
 
-select @mensaje,@statusCode
+select @mensaje AS mensaje,@statusCode AS statusCode
 

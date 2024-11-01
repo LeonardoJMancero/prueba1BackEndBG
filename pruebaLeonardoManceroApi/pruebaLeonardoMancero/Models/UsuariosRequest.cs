@@ -34,6 +34,15 @@ namespace pruebaLeonardoMancero.Models
         public required string usuario { get; set; }
     }
 
+    public class ConsultarLogin
+    {
+        [JsonPropertyName("usuario")]
+        public required string usuario { get; set; }
+
+        [JsonPropertyName("password")]
+        public required string password { get; set; }
+    }
+
     public class ModificarUsuarios
     {
         [JsonPropertyName("nombres")]

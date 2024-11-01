@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\pruebaLeonardoMancero.csproj": {}
+    "C:\\Users\\isc_2\\source\\repos\\prueba1BackEndBG\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\pruebaLeonardoMancero.csproj": {}
   },
   "projects": {
-    "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\pruebaLeonardoMancero.csproj": {
+    "C:\\Users\\isc_2\\source\\repos\\prueba1BackEndBG\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\pruebaLeonardoMancero.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\pruebaLeonardoMancero.csproj",
+        "projectUniqueName": "C:\\Users\\isc_2\\source\\repos\\prueba1BackEndBG\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\pruebaLeonardoMancero.csproj",
         "projectName": "pruebaLeonardoMancero",
-        "projectPath": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\pruebaLeonardoMancero.csproj",
+        "projectPath": "C:\\Users\\isc_2\\source\\repos\\prueba1BackEndBG\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\pruebaLeonardoMancero.csproj",
         "packagesPath": "C:\\Users\\isc_2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\isc_2\\source\\repos\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\obj\\",
+        "outputPath": "C:\\Users\\isc_2\\source\\repos\\prueba1BackEndBG\\pruebaLeonardoManceroApi\\pruebaLeonardoMancero\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\isc_2\\AppData\\Roaming\\NuGet\\NuGet.Config",

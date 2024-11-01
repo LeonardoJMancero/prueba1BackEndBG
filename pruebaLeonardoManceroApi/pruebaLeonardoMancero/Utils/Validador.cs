@@ -43,6 +43,7 @@
         internal static string ModificarUsuarios = "U";
         internal static string EliminarUsuarios = "D";
         internal static string ModificarPasswordUsuarios = "UP";
+        internal static string LogindUsuarios = "CL";
 
 
         internal static string consultarClientes = "C";

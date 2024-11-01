@@ -239,6 +239,32 @@
   },
   {
     "ContainingType": "pruebaLeonardoMancero.Controllers.UsuariosController",
+    "Method": "GetLoginRequest",
+    "RelativePath": "api/Usuarios/ConsultarLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consultarLogin",
+        "Type": "pruebaLeonardoMancero.Models.ConsultarLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[pruebaLeonardoMancero.Models.MensajeResponse, pruebaLeonardoMancero, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.UsuariosController",
     "Method": "GetUsuariosRequest",
     "RelativePath": "api/Usuarios/ConsultarUsuarios",
     "HttpMethod": "POST",

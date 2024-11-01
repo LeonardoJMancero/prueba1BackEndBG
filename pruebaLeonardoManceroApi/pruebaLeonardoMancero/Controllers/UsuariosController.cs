@@ -70,6 +70,23 @@ namespace pruebaLeonardoMancero.Controllers
         }
 
         [HttpPost]
+        [ActionName("ConsultarLogin")]
+        public List<MensajeResponse> GetLoginRequest(ConsultarLogin consultarLogin)
+        {
+            try
+            {
+                var consultar = _datosUsuarios.GetLoginRequest(consultarLogin, _context);
+
+                return consultar;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message.ToString());
+            }
+        }
+
+        [HttpPost]
         [ActionName("ModificarUsuarios")]
         public async Task<ActionResult<MensajeResponse>> PutUsuariosRequest(ModificarUsuarios usuariosRequest)
         {
