@@ -71,6 +71,13 @@ BEGIN
 	WHERE usuario =@usuario
 END
 
+IF @accion ='AC'
+BEGIN
+
+	SELECT nombres,apellidos,email,usuario,[password],confirmacionPassword,RTRIM(LTRIM(estado)) AS estado,fechaRegistro 
+	FROM Usuario
+END
+
 IF @accion ='CL'
 BEGIN
 		IF(SELECT count(1) FROM usuario WHERE usuario=@usuario and [password] = @password) = 0
@@ -129,9 +136,9 @@ BEGIN
 	BEGIN
 	IF @email is not null
 	BEGIN
-		IF (SELECT COUNT(1) FROM Usuario WHERE email = @email AND usuario=@usuario) = 0
+		IF (SELECT COUNT(1) FROM Usuario WHERE email = @email AND nombres=@nombre AND apellidos=@apellidos AND estado=@estado) = 0
 		BEGIN		
-				UPDATE Usuario SET nombres=@nombre, apellidos = @apellidos,email=@email
+				UPDATE Usuario SET nombres=@nombre, apellidos = @apellidos,email=@email,estado=@estado
 				WHERE usuario=@usuario
 
 				set @mensaje ='La Informacion fue Actualizada correctamente del Usuario: ' + UPPER(@usuario)
@@ -140,13 +147,13 @@ BEGIN
 		END
 		ELSE
 		BEGIN
-			SET @mensaje='Ya existe una Cuenta Asociada con ese Email.'
+			SET @mensaje='Ya existe una Cuenta Asociada con ese Usuario e Email.'
 			set @statusCode=@statusError
 		END
 	END
 	ELSE
 	BEGIN
-		SET @mensaje='El Email es Nulo1 y No te permite Actualizar'
+		SET @mensaje='El Email es Nulo y No te permite Actualizar'
 		set @statusCode=@statusError
 	END
 	END

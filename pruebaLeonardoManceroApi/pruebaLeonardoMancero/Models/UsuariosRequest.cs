@@ -57,6 +57,8 @@ namespace pruebaLeonardoMancero.Models
 
         [JsonPropertyName("usuario")]       
         public required string usuario { get; set; }
+        [JsonPropertyName("estado")]
+        public required string estado { get; set; }
     }
 
     public class EliminarUsuarios()

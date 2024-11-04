@@ -14,6 +14,7 @@ namespace pruebaLeonardoMancero.Datos
     {
         MensajeResponse PostUsuariosRequest(UsuariosRequest usuariosRequest, AppDbContext context);
         List<UsuariosResponse> GetUsuariosRequest(ConsultarUsuario consultarUsuario , AppDbContext context);
+        List<UsuariosResponse> GetUsuariosAllRequest(AppDbContext context);
         MensajeResponse PutUsuariosRequest(ModificarUsuarios usuariosRequest, AppDbContext _context);
         MensajeResponse PutUsuariosPaswwordRequest(ModificarPasswordUsuarios usuariosRequest, AppDbContext context);
         MensajeResponse DeleteUsuariosRequest(EliminarUsuarios usuariosRequest, AppDbContext _context);
@@ -76,6 +77,38 @@ namespace pruebaLeonardoMancero.Datos
                     command.Parameters.Add(new SqlParameter("@accion", stringHandlers.consultarUsuarios));
                     command.Parameters.Add(new SqlParameter("@usuario", consultarUsuario.usuario.ToString().Trim()));
 
+                    _context.Database.OpenConnection();
+                    ad = new SqlDataAdapter((SqlCommand)command);
+                    ad.Fill(ds);
+                    var json = JsonConvert.SerializeObject(ds.Tables[0]);
+                    response = JsonConvert.DeserializeObject<List<UsuariosResponse>>(json);
+                    _context.Database.CloseConnection();
+
+                    return response;
+
+                }
+                catch (DbUpdateException ex)
+                {
+                    _context.Database.CloseConnection();
+                    throw new Exception(ex.Message.ToString());
+                }
+            }
+
+        }
+
+        public List<UsuariosResponse> GetUsuariosAllRequest(AppDbContext _context)
+        {
+            using (var command = _context.Database.GetDbConnection().CreateCommand())
+            {
+                SqlDataAdapter ad = new SqlDataAdapter();
+                DataSet ds = new DataSet();
+                List<UsuariosResponse> response = new List<UsuariosResponse>();
+                try
+                {
+                    command.CommandText = stringHandlers.sp_Usuarios.Trim();
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.Add(new SqlParameter("@accion", stringHandlers.consultarUsuariosAll));
                     _context.Database.OpenConnection();
                     ad = new SqlDataAdapter((SqlCommand)command);
                     ad.Fill(ds);
@@ -242,6 +275,7 @@ namespace pruebaLeonardoMancero.Datos
                     command.Parameters.Add(new SqlParameter("@apellidos", usuariosRequest.apellidos.Trim()));
                     command.Parameters.Add(new SqlParameter("@email", usuariosRequest.email.Trim()));
                     command.Parameters.Add(new SqlParameter("@usuario", usuariosRequest.usuario.Trim()));
+                    command.Parameters.Add(new SqlParameter("@estado", usuariosRequest.estado.Trim()));
 
 
                     _context.Database.OpenConnection();

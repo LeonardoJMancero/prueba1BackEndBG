@@ -70,6 +70,25 @@ namespace pruebaLeonardoMancero.Controllers
         }
 
         [HttpPost]
+        [ActionName("ConsultarUsuariosAll")]
+        public List<UsuariosResponse> GetUsuariosAllRequest()
+        {
+            try
+            {
+                var consultar = _datosUsuarios.GetUsuariosAllRequest( _context);
+
+                return consultar;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message.ToString());
+            }
+        }
+
+
+
+        [HttpPost]
         [ActionName("ConsultarLogin")]
         public List<MensajeResponse> GetLoginRequest(ConsultarLogin consultarLogin)
         {

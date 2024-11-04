@@ -39,6 +39,7 @@
         internal static int statusMensaje = 500;
 
         internal static string consultarUsuarios = "C";
+        internal static string consultarUsuariosAll = "AC";
         internal static string InsertarUsuarios = "I";
         internal static string ModificarUsuarios = "U";
         internal static string EliminarUsuarios = "D";

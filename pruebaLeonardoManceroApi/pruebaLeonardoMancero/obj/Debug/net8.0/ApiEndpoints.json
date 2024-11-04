@@ -291,6 +291,26 @@
   },
   {
     "ContainingType": "pruebaLeonardoMancero.Controllers.UsuariosController",
+    "Method": "GetUsuariosAllRequest",
+    "RelativePath": "api/Usuarios/ConsultarUsuariosAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[pruebaLeonardoMancero.Models.UsuariosResponse, pruebaLeonardoMancero, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.UsuariosController",
     "Method": "DeleteUsuariosRequest",
     "RelativePath": "api/Usuarios/EliminarUsuarios",
     "HttpMethod": "POST",
