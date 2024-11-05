@@ -124,6 +124,42 @@
     ]
   },
   {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.FacturaController",
+    "Method": "GetClienteAllResponse",
+    "RelativePath": "api/Factura/ConsultarAllFacturas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[pruebaLeonardoMancero.Models.facturasResponse, pruebaLeonardoMancero, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "pruebaLeonardoMancero.Controllers.FacturaController",
+    "Method": "RegistrarFacturas",
+    "RelativePath": "api/Factura/RegistrarFacturas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "facturaRequest",
+        "Type": "pruebaLeonardoMancero.Models.Pedido",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "pruebaLeonardoMancero.Controllers.ProductosController",
     "Method": "PutProductosRequest",
     "RelativePath": "api/Productos/ActualizarProductos",

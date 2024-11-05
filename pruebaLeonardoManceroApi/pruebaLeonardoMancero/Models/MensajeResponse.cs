@@ -79,4 +79,22 @@ namespace pruebaLeonardoMancero.Models
         [JsonPropertyName("fechaRegistro")]
         public DateTime fechaRegistro { get; set; }
     }
+
+    public class facturasResponse
+    {
+        [JsonPropertyName("idfactura")]
+        public string idfactura { get; set; }
+        [JsonPropertyName("username")]
+        public string username { get; set; }
+        [JsonPropertyName("identificacion")]
+        public string identificacion { get; set; }
+        [JsonPropertyName("nombre")]
+        public string nombre { get; set; }
+        [JsonPropertyName("fechaRegistro")]
+        public string fechaRegistro { get; set; }
+
+        [JsonPropertyName("total")]
+        public string total { get; set; }
+
+    }
 }

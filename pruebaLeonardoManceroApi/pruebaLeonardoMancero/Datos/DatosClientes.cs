@@ -8,7 +8,7 @@ using System.Data;
 
 namespace pruebaLeonardoMancero.Datos
 {
-    public interface IDatosClientes
+    public interface IMapeoDatos
     {
         List<ClienteResponse> Consultar(ConsultarCliente consultarCliente, AppDbContext _context, string accion);
         MensajeResponse PostClientesRequest(ClienteRequest clienteRequest, AppDbContext context);
@@ -16,7 +16,7 @@ namespace pruebaLeonardoMancero.Datos
         MensajeResponse DeleteClientesRequest(EliminarCliente clienteRequest, AppDbContext _context);
         MensajeResponse PutClientesRequest(ModificarClienteRequest clienteRequest, AppDbContext _context);
     }
-    public class DatosClientes : IDatosClientes
+    public class DatosClientes : IMapeoDatos
     {
         public List<ClienteResponse> Consultar(ConsultarCliente consultarCliente, AppDbContext _context,string accion)
         {

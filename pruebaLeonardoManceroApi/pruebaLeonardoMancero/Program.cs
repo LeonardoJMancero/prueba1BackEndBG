@@ -24,6 +24,7 @@ builder.Services.AddDbContext<AppDbContext>(
 builder.Services.AddScoped<DatosUsuarios>();
 builder.Services.AddScoped<DatosClientes>();
 builder.Services.AddScoped<MapeoDatosProductos>();
+builder.Services.AddScoped<MapeoDatosFacturas>();
 
 
 builder.Services.AddControllers();
@@ -32,8 +33,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IDatosUsuarios, DatosUsuarios>();
-builder.Services.AddSingleton<IDatosClientes, DatosClientes>();
+builder.Services.AddSingleton<IMapeoDatos, DatosClientes>();
 builder.Services.AddSingleton<IMapeoDatosProductos, MapeoDatosProductos>();
+builder.Services.AddSingleton<IMapeoDatosFacturas, MapeoDatosFacturas>();
 var app = builder.Build();
 
 // Habilitar CORS

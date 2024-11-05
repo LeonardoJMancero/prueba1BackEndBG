@@ -1,6 +1,7 @@
-CREATE DATABASE DBPrueba
-GO
-
+IF NOT EXISTS(SELECT * FROM sys.databases WHERE name = 'DBPrueba')
+BEGIN
+    CREATE DATABASE DBPrueba
+END
 USE [DBPrueba]
 GO
 
@@ -91,5 +92,65 @@ ALTER TABLE [dbo].[Cliente] ADD  CONSTRAINT [DF_Cliente_fechaRegistro]  DEFAULT 
 ALTER TABLE [dbo].[Cliente] ADD  CONSTRAINT [DF_Cliente_estado]  DEFAULT ('ACTIVO') FOR [estado]
 
 CREATE INDEX indexIdentificacion on cliente(identificacion)
+
+END
+
+
+IF NOT (EXISTS (SELECT * 
+                 FROM INFORMATION_SCHEMA.TABLES 
+                 WHERE TABLE_SCHEMA = 'dbo' 
+                 AND  TABLE_NAME = 'Factura'))
+BEGIN
+
+CREATE TABLE [dbo].[Factura](
+	[idfactura] [int] IDENTITY(1,1) NOT NULL,
+	usernameVendedor varchar(200) NOT NULL,
+	identificacion varchar(20)	NOT NULL,
+	estado varchar(10),
+	fechaRegistro datetime,
+	total decimal(18,2)
+
+ CONSTRAINT [PK_Factura] PRIMARY KEY CLUSTERED 
+(
+	idfactura ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+ALTER TABLE [dbo].[Factura] ADD  CONSTRAINT [DF_Factura_fechaRegistro]  DEFAULT (getdate()) FOR [fechaRegistro]
+ALTER TABLE [dbo].[Factura] ADD  CONSTRAINT [DF_Factura_estado]  DEFAULT ('ACTIVO') FOR [estado]
+
+CREATE INDEX indexIdentificacion on Factura(identificacion)
+CREATE INDEX indexUsername on Factura(usernameVendedor)
+
+END
+
+
+IF NOT (EXISTS (SELECT * 
+                 FROM INFORMATION_SCHEMA.TABLES 
+                 WHERE TABLE_SCHEMA = 'dbo' 
+                 AND  TABLE_NAME = 'FacturaDet'))
+BEGIN
+
+CREATE TABLE [dbo].[FacturaDet](
+	[idfacturaDet] [int] IDENTITY(1,1) NOT NULL,
+	idfacturaCab int,
+	codigo varchar(20),
+	subtotal decimal(18,4),
+	cantidad int,
+	fechaRegistro datetime,
+	estado varchar(10)
+
+ CONSTRAINT [PK_FacturaDet] PRIMARY KEY CLUSTERED 
+(
+	idfacturaDet ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+ALTER TABLE [dbo].[FacturaDet] ADD  CONSTRAINT [DF_FacturaDet_fechaRegistro]  DEFAULT (getdate()) FOR [fechaRegistro]
+ALTER TABLE [dbo].[FacturaDet] ADD  CONSTRAINT [DF_FacturaDet_estado]  DEFAULT ('ACTIVO') FOR [estado]
+
+CREATE INDEX indexidfacturaDet on FacturaDet(idFacturaDet)
 
 END

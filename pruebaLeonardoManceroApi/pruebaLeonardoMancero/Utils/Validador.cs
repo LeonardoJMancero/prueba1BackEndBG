@@ -37,6 +37,7 @@
         internal static string Inactivo= "Inactivo";
       
         internal static int statusMensaje = 500;
+        internal static int statusOK = 500;
 
         internal static string consultarUsuarios = "C";
         internal static string consultarUsuariosAll = "AC";
@@ -60,10 +61,16 @@
         internal static string ModificarProductos = "U";
         internal static string EliminarProductos = "D";
 
+        internal static string InsertarFacturas = "I";
+        internal static string InsertarFacturasDetalle = "ID";
+        internal static string ConsultarFacturas = "C";
+        
+
 
         internal static string sp_Usuarios = "sp_usuarios";
         internal static string sp_clientes = "sp_Cliente";
         internal static string sp_productos = "sp_Producto";
+        internal static string sp_facturas = "sp_Factura";
 
 
     }
